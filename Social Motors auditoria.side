@@ -1,0 +1,384 @@
+{
+  "id": "4ce12ee2-7fbb-4517-a67f-ab256cdeae1c",
+  "version": "2.0",
+  "name": "Social Motors auditoria",
+  "url": "http://localhost:8080/CRUD-SOCIALMOTORS/select.jsp",
+  "tests": [{
+    "id": "51fdf1c7-3290-4940-8000-c022d4cc7ca8",
+    "name": "alterando veiculo",
+    "commands": [{
+      "id": "445c24d0-4cff-4375-8b8b-5456ee5e2455",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/CRUD-SOCIALMOTORS/select.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29c8bcfd-3dde-4324-8e63-0b62d3210b45",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "431ea393-0792-4c5b-9677-5bbd0d6e632e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Alterar",
+      "targets": [
+        ["linkText=Alterar", "linkText"],
+        ["css=tr:nth-child(1) .btn-warning", "css:finder"],
+        ["xpath=//a[contains(text(),'Alterar')]", "xpath:link"],
+        ["xpath=//table[@id='tablaDatos']/tbody/tr/td[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'alterar.jsp?id=45')]", "xpath:href"],
+        ["xpath=//td[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Alterar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26b42e48-5d74-4445-99d1-4f4a356ad895",
+      "comment": "",
+      "command": "click",
+      "target": "name=ModeloVeiculo",
+      "targets": [
+        ["name=ModeloVeiculo", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ModeloVeiculo']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f9d8170-4395-419f-8f45-a0e7ac06511a",
+      "comment": "",
+      "command": "type",
+      "target": "name=ModeloVeiculo",
+      "targets": [
+        ["name=ModeloVeiculo", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ModeloVeiculo']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "teste"
+    }, {
+      "id": "9ed1fe42-f5a1-4805-b53f-39872db97ee2",
+      "comment": "",
+      "command": "type",
+      "target": "name=MarcaVeiculo",
+      "targets": [
+        ["name=MarcaVeiculo", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='MarcaVeiculo']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "teste"
+    }, {
+      "id": "7bc582e8-76bf-40f3-8129-ba0647fc4518",
+      "comment": "",
+      "command": "type",
+      "target": "name=Email",
+      "targets": [
+        ["name=Email", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Email']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "teste@teste.com.br"
+    }, {
+      "id": "727adbd6-c539-4bb9-99d5-1d0c7f9ea8fe",
+      "comment": "",
+      "command": "type",
+      "target": "name=Data",
+      "targets": [
+        ["name=Data", "name"],
+        ["css=.form-group:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='Data']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2019-11-02"
+    }, {
+      "id": "fd693af3-8f85-4012-9352-7628f2f8c517",
+      "comment": "",
+      "command": "type",
+      "target": "name=Data",
+      "targets": [
+        ["name=Data", "name"],
+        ["css=.form-group:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='Data']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2019-11-20"
+    }, {
+      "id": "54e175e9-acdd-428c-b343-07beba4f70b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Alterar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1b8c90da-cccc-4ec8-bc19-5dd853d46d0b",
+    "name": "deletando veiculo",
+    "commands": [{
+      "id": "0b686795-3288-43f5-961c-d61d29f9f1a6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/CRUD-SOCIALMOTORS/select.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9af557fd-12df-4a3b-92a9-6f6415d47c2c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0db3a04a-9087-4aa5-8c10-36ab3f78efba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Deletar",
+      "targets": [
+        ["linkText=Deletar", "linkText"],
+        ["css=tr:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Deletar')]", "xpath:link"],
+        ["xpath=//table[@id='tablaDatos']/tbody/tr/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'delete.jsp?codigo=45')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Deletar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5ef7717-2a04-49f5-8f72-5e8199e7fd3b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Deletar",
+      "targets": [
+        ["linkText=Deletar", "linkText"],
+        ["css=tr:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Deletar')]", "xpath:link"],
+        ["xpath=//table[@id='tablaDatos']/tbody/tr/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'delete.jsp?codigo=46')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Deletar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b620eb4-cf69-4349-8397-355c2775b9db",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Deletar",
+      "targets": [
+        ["linkText=Deletar", "linkText"],
+        ["css=tr:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Deletar')]", "xpath:link"],
+        ["xpath=//table[@id='tablaDatos']/tbody/tr/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'delete.jsp?codigo=47')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Deletar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bca9a54-daa1-489d-88d1-3e12aba601d7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Deletar",
+      "targets": [
+        ["linkText=Deletar", "linkText"],
+        ["css=tr:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Deletar')]", "xpath:link"],
+        ["xpath=//table[@id='tablaDatos']/tbody/tr/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'delete.jsp?codigo=48')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Deletar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f57cbd46-ca1a-4e06-80cd-5dc396a9da82",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Deletar",
+      "targets": [
+        ["linkText=Deletar", "linkText"],
+        ["css=tr:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Deletar')]", "xpath:link"],
+        ["xpath=//table[@id='tablaDatos']/tbody/tr/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'delete.jsp?codigo=49')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Deletar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ed1a0b03-767c-4179-9a47-cd3559f2dfbf",
+    "name": "cadastrando veiculo",
+    "commands": [{
+      "id": "0a8f4170-4787-4027-9028-9d1526e98e4c",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/CRUD-SOCIALMOTORS/select.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7cfb7a39-05a3-409c-be18-f19f66b34ebc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ec41860-c1df-4983-bc2c-90e749d18cad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Novo Cadastro",
+      "targets": [
+        ["linkText=Novo Cadastro", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Novo Cadastro')]", "xpath:link"],
+        ["xpath=//div[@id='interface']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'cadastro.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Novo Cadastro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35e89814-ce36-4f06-84c1-84a0c2b081ed",
+      "comment": "",
+      "command": "click",
+      "target": "name=ModeloVeiculo",
+      "targets": [
+        ["name=ModeloVeiculo", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ModeloVeiculo']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91c58125-029e-48ff-b476-ed62f7ba9a91",
+      "comment": "",
+      "command": "type",
+      "target": "name=ModeloVeiculo",
+      "targets": [
+        ["name=ModeloVeiculo", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='ModeloVeiculo']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "teste02"
+    }, {
+      "id": "24ee6ac6-0a03-4507-b197-babf49cb35ea",
+      "comment": "",
+      "command": "type",
+      "target": "name=MarcaVeiculo",
+      "targets": [
+        ["name=MarcaVeiculo", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='MarcaVeiculo']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "teste02"
+    }, {
+      "id": "7b93c7be-a374-4fb8-9353-158bdd6e945a",
+      "comment": "",
+      "command": "type",
+      "target": "name=Email",
+      "targets": [
+        ["name=Email", "name"],
+        ["css=.form-group:nth-child(3) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Email']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "teste@teste.com.br"
+    }, {
+      "id": "fd809521-89b5-45d2-b924-4f791ae86011",
+      "comment": "",
+      "command": "type",
+      "target": "name=Data",
+      "targets": [
+        ["name=Data", "name"],
+        ["css=.form-group:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='Data']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "0002-11-19"
+    }, {
+      "id": "f828a3d2-b44f-426b-9257-e1cda50b844b",
+      "comment": "",
+      "command": "type",
+      "target": "name=Data",
+      "targets": [
+        ["name=Data", "name"],
+        ["css=.form-group:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='Data']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "0020-11-19"
+    }, {
+      "id": "5a240125-cf02-443a-ab44-43f3689f66a4",
+      "comment": "",
+      "command": "type",
+      "target": "name=Data",
+      "targets": [
+        ["name=Data", "name"],
+        ["css=.form-group:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='Data']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "0201-11-19"
+    }, {
+      "id": "eb821cd3-caaa-4094-b5cc-8bb3ca6a36a5",
+      "comment": "",
+      "command": "type",
+      "target": "name=Data",
+      "targets": [
+        ["name=Data", "name"],
+        ["css=.form-group:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='Data']", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2019-11-19"
+    }, {
+      "id": "0f5156a2-bf46-4cef-abfe-f7d9c4cbb514",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@onclick=\"saudacao('Social Motors')\"]", "xpath:attributes"],
+        ["xpath=//section[@id='corpo']/form/div[5]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "49db370c-e0c1-42c2-8584-efe2aea7f121",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/CRUD-SOCIALMOTORS/select.jsp"],
+  "plugins": []
+}
